@@ -12,7 +12,7 @@ import requests
 '''
 
 
-class ServerChian(object):
+class ServerChan(object):
 
     def __init__(self, secret_key):
         if not secret_key:
@@ -60,9 +60,9 @@ class ServerChian(object):
 if __name__ == '__main__':
     pass
     # secret = ''
-    # serverchain = ServerChian(secret)
+    # serverchan = ServerChan(secret)
     #
-    # response = serverchain.push("test", 'just for test')
+    # response = serverchan.push("test", 'just for test')
     # print(response.text)
     # print(response.status_code)@&m!4BaSTgM!5EVxB^o5
     # print(response.headers)

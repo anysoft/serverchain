@@ -12,9 +12,9 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'serverchain'
-DESCRIPTION = 'unofficial sdk for serverchain by anysoft.'
-URL = 'https://github.com/anysoft/serverchain'
+NAME = 'serverchan'
+DESCRIPTION = 'unofficial sdk for serverchan by anysoft.'
+URL = 'https://github.com/anysoft/serverchan'
 EMAIL = 'anysoft@yeah.net'
 AUTHOR = 'anysoft'
 REQUIRES_PYTHON = '>=3.6.0'
@@ -105,7 +105,7 @@ setup(
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
     # If your package is a single module, use this instead of 'packages':
-    # py_modules=['serverchain'],
+    # py_modules=['serverchan'],
 
     # entry_points={
     #     'console_scripts': ['mycli=mymodule:cli'],

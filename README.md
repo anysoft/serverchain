@@ -1,7 +1,7 @@
-📦 serverchain (for ftqq)
+📦 serverchan (for ftqq)
 =======================
 
-简单封装[ftqq]提供的api，仓库地址 [serverchain] 
+简单封装[ftqq]提供的api，仓库地址 [serverchan] 
 
 `非官方版本，具体可以查看仓库源码`
 
@@ -9,28 +9,28 @@
 
 目的在于方便脚本调用，减少重复代码
 
-[Check out the example!][serverchain]
+[Check out the example!][serverchan]
 
 Installation
 -----
 
 ```bash
-pip install serverchain
+pip install serverchan
 ```
 
 demo
 ```python
-from serverchain import ServerChian
-from serverchain.channel import Channels
+from serverchan import ServerChan
+from serverchan.channel import Channels
 
 # secret = 'SCU114xxxxx'
 secret = 'SCTxxxx'
-serverchain = ServerChian(secret)
-response = serverchain.push(title="test", desp='just for test')
+serverchan = ServerChan(secret)
+response = serverchan.push(title="test", desp='just for test')
 print(response.text)
 print(response.text.encode().decode('unicode_escape'))
 
-response = serverchain.push(title="test1", desp='just for test1', channel='{}|{}'.format(Channels.WECHAT_SERVICE_ACCOUNT, Channels.PUSHDEER))
+response = serverchan.push(title="test1", desp='just for test1', channel='{}|{}'.format(Channels.WECHAT_SERVICE_ACCOUNT, Channels.PUSHDEER))
 print(response.text)
 print(response.text.encode().decode('unicode_escape'))
 
@@ -63,7 +63,7 @@ distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any means.
 
   [ftqq]: https://sct.ftqq.com/
-  [serverchain]: https://github.com/anysoft/serverchain
+  [serverchan]: https://github.com/anysoft/serverchan
   [PyPi]: https://docs.python.org/3/distutils/packageindex.html
   [Twine]: https://pypi.python.org/pypi/twine
   [image]: https://farm1.staticflickr.com/628/33173824932_58add34581_k_d.jpg
